@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="IngredientEntity" representedClassName="IngredientEntity" syncable="YES">
+        <attribute name="aisle" optional="YES" attributeType="String"/>
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="original" optional="YES" attributeType="String"/>
+        <attribute name="originalName" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <attribute name="unitLong" optional="YES" attributeType="String"/>
+        <relationship name="missed" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeEntity" inverseName="missedIngredient" inverseEntity="RecipeEntity"/>
+        <relationship name="unused" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeEntity" inverseName="unusedIngredient" inverseEntity="RecipeEntity"/>
+        <relationship name="used" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecipeEntity" inverseName="usedIngredient" inverseEntity="RecipeEntity"/>
+    </entity>
+    <entity name="RecipeEntity" representedClassName="RecipeEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="missedIngredientCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="usedIngredientCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="missedIngredient" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IngredientEntity" inverseName="missed" inverseEntity="IngredientEntity"/>
+        <relationship name="unusedIngredient" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IngredientEntity" inverseName="unused" inverseEntity="IngredientEntity"/>
+        <relationship name="usedIngredient" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="IngredientEntity" inverseName="used" inverseEntity="IngredientEntity"/>
+    </entity>
+</model>

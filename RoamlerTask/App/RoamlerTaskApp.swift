@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct RoamlerTaskApp: App {
-    let persistenceController = PersistenceController.shared
-
+	
+	private let viewModel = MainListViewModel(api: WebAPI(),
+											  persistence: CoreDataStorage())
+	
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+			MainListView()
+				.environmentObject(viewModel)
         }
     }
 }

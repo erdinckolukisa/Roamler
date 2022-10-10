@@ -8,14 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		FA1FD54628F03B9400520F91 /* RoamlerTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD54528F03B9400520F91 /* RoamlerTaskApp.swift */; };
-		FA1FD54828F03B9400520F91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD54728F03B9400520F91 /* ContentView.swift */; };
 		FA1FD54A28F03B9500520F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1FD54928F03B9500520F91 /* Assets.xcassets */; };
 		FA1FD54D28F03B9500520F91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1FD54C28F03B9500520F91 /* Preview Assets.xcassets */; };
-		FA1FD54F28F03B9500520F91 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD54E28F03B9500520F91 /* Persistence.swift */; };
 		FA1FD55228F03B9500520F91 /* RoamlerTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD55028F03B9500520F91 /* RoamlerTask.xcdatamodeld */; };
-		FA1FD55C28F03B9600520F91 /* RoamlerTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD55B28F03B9600520F91 /* RoamlerTaskTests.swift */; };
 		FA1FD56628F03B9600520F91 /* RoamlerTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD56528F03B9600520F91 /* RoamlerTaskUITests.swift */; };
 		FA1FD56828F03B9600520F91 /* RoamlerTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD56728F03B9600520F91 /* RoamlerTaskUITestsLaunchTests.swift */; };
+		FA1FD57628F03BD200520F91 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1FD54728F03B9400520F91 /* MainListView.swift */; };
+		FA3173F728F2FA1500E35060 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3173F628F2FA1500E35060 /* Persistable.swift */; };
+		FA3173F928F2FA2E00E35060 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3173F828F2FA2E00E35060 /* CoreDataStorage.swift */; };
+		FA31742F28F3574100E35060 /* MainListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31742E28F3574100E35060 /* MainListViewModelTests.swift */; };
+		FA31743228F3582800E35060 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31743128F3582800E35060 /* MockAPI.swift */; };
+		FA31743428F358BA00E35060 /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31743328F358BA00E35060 /* MockStorage.swift */; };
+		FA31743C28F3760B00E35060 /* RecipeDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31743B28F3760B00E35060 /* RecipeDetailViewModelTests.swift */; };
+		FA31743E28F378CC00E35060 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA31743D28F378CC00E35060 /* README.md */; };
+		FADF5B3128F03DB000B4B123 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3028F03DB000B4B123 /* Networking.swift */; };
+		FADF5B3328F03DC700B4B123 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3228F03DC700B4B123 /* WebAPI.swift */; };
+		FADF5B3928F040E100B4B123 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3828F040E100B4B123 /* Recipe.swift */; };
+		FADF5B3B28F0443400B4B123 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3A28F0443400B4B123 /* Constants.swift */; };
+		FADF5B3D28F0528D00B4B123 /* MainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3C28F0528D00B4B123 /* MainListViewModel.swift */; };
+		FADF5B3F28F05C3400B4B123 /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B3E28F05C3400B4B123 /* RecipeRow.swift */; };
+		FADF5B5328F0986600B4B123 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B5228F0986600B4B123 /* ErrorView.swift */; };
+		FADF5B5628F0A6CA00B4B123 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FADF5B5528F0A6CA00B4B123 /* Kingfisher */; };
+		FADF5B5928F0AFDF00B4B123 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = FADF5B5828F0AFDF00B4B123 /* Reachability */; };
+		FADF5B5B28F0B08100B4B123 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B5A28F0B08100B4B123 /* NetworkManager.swift */; };
+		FADF5B6128F0B4CC00B4B123 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B6028F0B4CC00B4B123 /* RecipeDetailViewModel.swift */; };
+		FADF5B6328F0B4EF00B4B123 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5B6228F0B4EF00B4B123 /* RecipeDetailView.swift */; };
+		FAF6647528F40F6F00BABBA0 /* RecipeEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6647128F40F6F00BABBA0 /* RecipeEntity+CoreDataClass.swift */; };
+		FAF6647628F40F6F00BABBA0 /* RecipeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6647228F40F6F00BABBA0 /* RecipeEntity+CoreDataProperties.swift */; };
+		FAF6647728F40F6F00BABBA0 /* IngredientEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6647328F40F6F00BABBA0 /* IngredientEntity+CoreDataClass.swift */; };
+		FAF6647828F40F6F00BABBA0 /* IngredientEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF6647428F40F6F00BABBA0 /* IngredientEntity+CoreDataProperties.swift */; };
+		FAF664C128F42F1A00BABBA0 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF664C028F42F1A00BABBA0 /* IngredientRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +60,36 @@
 /* Begin PBXFileReference section */
 		FA1FD54228F03B9400520F91 /* RoamlerTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamlerTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FD54528F03B9400520F91 /* RoamlerTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamlerTaskApp.swift; sourceTree = "<group>"; };
-		FA1FD54728F03B9400520F91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA1FD54728F03B9400520F91 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		FA1FD54928F03B9500520F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1FD54C28F03B9500520F91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FA1FD54E28F03B9500520F91 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FA1FD55128F03B9500520F91 /* RoamlerTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RoamlerTask.xcdatamodel; sourceTree = "<group>"; };
 		FA1FD55728F03B9600520F91 /* RoamlerTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamlerTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA1FD55B28F03B9600520F91 /* RoamlerTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamlerTaskTests.swift; sourceTree = "<group>"; };
 		FA1FD56128F03B9600520F91 /* RoamlerTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamlerTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FD56528F03B9600520F91 /* RoamlerTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamlerTaskUITests.swift; sourceTree = "<group>"; };
 		FA1FD56728F03B9600520F91 /* RoamlerTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamlerTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA3173F628F2FA1500E35060 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		FA3173F828F2FA2E00E35060 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		FA31742E28F3574100E35060 /* MainListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModelTests.swift; sourceTree = "<group>"; };
+		FA31743128F3582800E35060 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		FA31743328F358BA00E35060 /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
+		FA31743B28F3760B00E35060 /* RecipeDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModelTests.swift; sourceTree = "<group>"; };
+		FA31743D28F378CC00E35060 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FADF5B3028F03DB000B4B123 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FADF5B3228F03DC700B4B123 /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
+		FADF5B3828F040E100B4B123 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		FADF5B3A28F0443400B4B123 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FADF5B3C28F0528D00B4B123 /* MainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewModel.swift; sourceTree = "<group>"; };
+		FADF5B3E28F05C3400B4B123 /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
+		FADF5B5228F0986600B4B123 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		FADF5B5A28F0B08100B4B123 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FADF5B6028F0B4CC00B4B123 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		FADF5B6228F0B4EF00B4B123 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		FAF6647128F40F6F00BABBA0 /* RecipeEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAF6647228F40F6F00BABBA0 /* RecipeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAF6647328F40F6F00BABBA0 /* IngredientEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IngredientEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FAF6647428F40F6F00BABBA0 /* IngredientEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IngredientEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FAF664C028F42F1A00BABBA0 /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADF5B5628F0A6CA00B4B123 /* Kingfisher in Frameworks */,
+				FADF5B5928F0AFDF00B4B123 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +122,7 @@
 		FA1FD53928F03B9400520F91 = {
 			isa = PBXGroup;
 			children = (
+				FA31743D28F378CC00E35060 /* README.md */,
 				FA1FD54428F03B9400520F91 /* RoamlerTask */,
 				FA1FD55A28F03B9600520F91 /* RoamlerTaskTests */,
 				FA1FD56428F03B9600520F91 /* RoamlerTaskUITests */,
@@ -98,11 +143,13 @@
 		FA1FD54428F03B9400520F91 /* RoamlerTask */ = {
 			isa = PBXGroup;
 			children = (
-				FA1FD54528F03B9400520F91 /* RoamlerTaskApp.swift */,
-				FA1FD54728F03B9400520F91 /* ContentView.swift */,
-				FA1FD54928F03B9500520F91 /* Assets.xcassets */,
-				FA1FD54E28F03B9500520F91 /* Persistence.swift */,
-				FA1FD55028F03B9500520F91 /* RoamlerTask.xcdatamodeld */,
+				FADF5B2C28F03C8600B4B123 /* App */,
+				FADF5B2F28F03D9F00B4B123 /* Network */,
+				FA1FD57428F03BA900520F91 /* MainScreen */,
+				FADF5B5D28F0B49900B4B123 /* DetailScreen */,
+				FADF5B2E28F03CA200B4B123 /* Persistence */,
+				FAF6644828F4063F00BABBA0 /* Helper */,
+				FADF5B2D28F03C9300B4B123 /* SupportingFiles */,
 				FA1FD54B28F03B9500520F91 /* Preview Content */,
 			);
 			path = RoamlerTask;
@@ -119,7 +166,8 @@
 		FA1FD55A28F03B9600520F91 /* RoamlerTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA1FD55B28F03B9600520F91 /* RoamlerTaskTests.swift */,
+				FA31742B28F3570900E35060 /* MainScreen */,
+				FA31743928F375E000E35060 /* DetailScreen */,
 			);
 			path = RoamlerTaskTests;
 			sourceTree = "<group>";
@@ -131,6 +179,166 @@
 				FA1FD56728F03B9600520F91 /* RoamlerTaskUITestsLaunchTests.swift */,
 			);
 			path = RoamlerTaskUITests;
+			sourceTree = "<group>";
+		};
+		FA1FD57428F03BA900520F91 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B3628F03F1F00B4B123 /* Model */,
+				FA1FD57528F03BBE00520F91 /* View */,
+				FADF5B3728F03F2500B4B123 /* ViewModel */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		FA1FD57528F03BBE00520F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FD54728F03B9400520F91 /* MainListView.swift */,
+				FADF5B3E28F05C3400B4B123 /* RecipeRow.swift */,
+				FADF5B5228F0986600B4B123 /* ErrorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA31740A28F2FDAF00E35060 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAF6647128F40F6F00BABBA0 /* RecipeEntity+CoreDataClass.swift */,
+				FAF6647228F40F6F00BABBA0 /* RecipeEntity+CoreDataProperties.swift */,
+				FAF6647328F40F6F00BABBA0 /* IngredientEntity+CoreDataClass.swift */,
+				FAF6647428F40F6F00BABBA0 /* IngredientEntity+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		FA31742B28F3570900E35060 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA31742D28F3572400E35060 /* ViewModel */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		FA31742D28F3572400E35060 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA31742E28F3574100E35060 /* MainListViewModelTests.swift */,
+				FA31743028F3581600E35060 /* Mock Objects */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA31743028F3581600E35060 /* Mock Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FA31743128F3582800E35060 /* MockAPI.swift */,
+				FA31743328F358BA00E35060 /* MockStorage.swift */,
+			);
+			path = "Mock Objects";
+			sourceTree = "<group>";
+		};
+		FA31743928F375E000E35060 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FA31743A28F375EF00E35060 /* ViewModel */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		FA31743A28F375EF00E35060 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA31743B28F3760B00E35060 /* RecipeDetailViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FADF5B2C28F03C8600B4B123 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FD54528F03B9400520F91 /* RoamlerTaskApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FADF5B2D28F03C9300B4B123 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA1FD54928F03B9500520F91 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FADF5B2E28F03CA200B4B123 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				FA31740A28F2FDAF00E35060 /* CoreDataModels */,
+				FA3173F628F2FA1500E35060 /* Persistable.swift */,
+				FA3173F828F2FA2E00E35060 /* CoreDataStorage.swift */,
+				FA1FD55028F03B9500520F91 /* RoamlerTask.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		FADF5B2F28F03D9F00B4B123 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B3028F03DB000B4B123 /* Networking.swift */,
+				FADF5B3228F03DC700B4B123 /* WebAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FADF5B3628F03F1F00B4B123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B3828F040E100B4B123 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADF5B3728F03F2500B4B123 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B3C28F0528D00B4B123 /* MainListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FADF5B5D28F0B49900B4B123 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B5F28F0B4B800B4B123 /* View */,
+				FADF5B5E28F0B4B000B4B123 /* ViewModel */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		FADF5B5E28F0B4B000B4B123 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B6028F0B4CC00B4B123 /* RecipeDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FADF5B5F28F0B4B800B4B123 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B6228F0B4EF00B4B123 /* RecipeDetailView.swift */,
+				FAF664C028F42F1A00BABBA0 /* IngredientRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF6644828F4063F00BABBA0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FADF5B3A28F0443400B4B123 /* Constants.swift */,
+				FADF5B5A28F0B08100B4B123 /* NetworkManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +357,10 @@
 			dependencies = (
 			);
 			name = RoamlerTask;
+			packageProductDependencies = (
+				FADF5B5528F0A6CA00B4B123 /* Kingfisher */,
+				FADF5B5828F0AFDF00B4B123 /* Reachability */,
+			);
 			productName = RoamlerTask;
 			productReference = FA1FD54228F03B9400520F91 /* RoamlerTask.app */;
 			productType = "com.apple.product-type.application";
@@ -204,6 +416,7 @@
 					};
 					FA1FD55628F03B9600520F91 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 						TestTargetID = FA1FD54128F03B9400520F91;
 					};
 					FA1FD56028F03B9600520F91 = {
@@ -221,6 +434,10 @@
 				Base,
 			);
 			mainGroup = FA1FD53928F03B9400520F91;
+			packageReferences = (
+				FADF5B5428F0A6CA00B4B123 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FADF5B5728F0AFDF00B4B123 /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = FA1FD54328F03B9400520F91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA31743E28F378CC00E35060 /* README.md in Resources */,
 				FA1FD54D28F03B9500520F91 /* Preview Assets.xcassets in Resources */,
 				FA1FD54A28F03B9500520F91 /* Assets.xcassets in Resources */,
 			);
@@ -263,10 +481,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1FD54F28F03B9500520F91 /* Persistence.swift in Sources */,
+				FA3173F928F2FA2E00E35060 /* CoreDataStorage.swift in Sources */,
+				FADF5B6328F0B4EF00B4B123 /* RecipeDetailView.swift in Sources */,
+				FADF5B3928F040E100B4B123 /* Recipe.swift in Sources */,
+				FADF5B3328F03DC700B4B123 /* WebAPI.swift in Sources */,
+				FAF6647828F40F6F00BABBA0 /* IngredientEntity+CoreDataProperties.swift in Sources */,
+				FAF6647628F40F6F00BABBA0 /* RecipeEntity+CoreDataProperties.swift in Sources */,
+				FADF5B5B28F0B08100B4B123 /* NetworkManager.swift in Sources */,
+				FADF5B3F28F05C3400B4B123 /* RecipeRow.swift in Sources */,
+				FADF5B3128F03DB000B4B123 /* Networking.swift in Sources */,
 				FA1FD55228F03B9500520F91 /* RoamlerTask.xcdatamodeld in Sources */,
-				FA1FD54828F03B9400520F91 /* ContentView.swift in Sources */,
+				FAF6647528F40F6F00BABBA0 /* RecipeEntity+CoreDataClass.swift in Sources */,
+				FA1FD57628F03BD200520F91 /* MainListView.swift in Sources */,
+				FADF5B5328F0986600B4B123 /* ErrorView.swift in Sources */,
+				FA3173F728F2FA1500E35060 /* Persistable.swift in Sources */,
+				FADF5B6128F0B4CC00B4B123 /* RecipeDetailViewModel.swift in Sources */,
+				FAF664C128F42F1A00BABBA0 /* IngredientRow.swift in Sources */,
 				FA1FD54628F03B9400520F91 /* RoamlerTaskApp.swift in Sources */,
+				FAF6647728F40F6F00BABBA0 /* IngredientEntity+CoreDataClass.swift in Sources */,
+				FADF5B3B28F0443400B4B123 /* Constants.swift in Sources */,
+				FADF5B3D28F0528D00B4B123 /* MainListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +508,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1FD55C28F03B9600520F91 /* RoamlerTaskTests.swift in Sources */,
+				FA31743428F358BA00E35060 /* MockStorage.swift in Sources */,
+				FA31743228F3582800E35060 /* MockAPI.swift in Sources */,
+				FA31743C28F3760B00E35060 /* RecipeDetailViewModelTests.swift in Sources */,
+				FA31742F28F3574100E35060 /* MainListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,8 +668,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +678,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.RoamlerTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,8 +701,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +711,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.RoamlerTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,15 +725,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6E9VL7KBPB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.RoamlerTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoamlerTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RoamlerTask";
@@ -500,11 +752,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6E9VL7KBPB;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamKolukisa.RoamlerTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -591,6 +849,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FADF5B5428F0A6CA00B4B123 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		FADF5B5728F0AFDF00B4B123 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FADF5B5528F0A6CA00B4B123 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADF5B5428F0A6CA00B4B123 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FADF5B5828F0AFDF00B4B123 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FADF5B5728F0AFDF00B4B123 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FA1FD55028F03B9500520F91 /* RoamlerTask.xcdatamodeld */ = {
